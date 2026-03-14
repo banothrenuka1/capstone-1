@@ -25,7 +25,9 @@ urlpatterns = [
     path('add/',views.add_employee,name="add_employee"),
     path('login/',auth_views.LoginView.as_view(template_name='app/login.html'),name='login'),
     path('logout/',auth_views.LogoutView.as_view(next_page='login'),name='logout'),
-    path('register/',views.register,name="register")
+    path('register/',views.register,name="register"),
+    path('success/',views.success,name='employee_success')
+    
     
 
 ]

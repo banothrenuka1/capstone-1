@@ -29,4 +29,7 @@ def register(request):
     else:
       form=UserCreationForm()
     return render(request,'app/register.html',{'form':form})
-   
+def success(request):
+    return render(request,'app/employee_success.html')
+
+
